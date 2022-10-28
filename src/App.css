@@ -1,0 +1,111 @@
+
+.lessons{
+    padding: 2rem 1rem 1rem 5rem;
+}
+.lessons__btn{
+    position: relative;
+}
+.lessons__firstchild{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 130px;
+    background-color: rgb(51, 54, 103);
+    padding: 0.5px;
+}
+.lessons__btn img{
+    width: 40px;
+    height: 40px;
+}
+.lessons__btn span{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.lessons__secondchild0{
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: inherit;
+    position:absolute;
+    top: 9vh;
+    left: 0;
+    border: 0.5px solid #fff;
+    visibility: hidden;
+    overflow: hidden;
+}
+.lessons__secondchild{
+    width: 300px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: inherit;
+    position:absolute;
+    top: 9vh;
+    left: 0;
+    z-index: 999;
+    border: 1px solid #fff;
+    animation-name: example1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    background: rgba(30, 54, 96, 0.4);
+    backdrop-filter: blur(10px);
+}
+.lessons__secondchild__2{
+    width: 300px;
+    height: 500px;
+    background-color: inherit;
+    position:absolute;
+    top: 9vh;
+    left: 0;
+    z-index: 999;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    animation-name: example2;
+    animation-duration: 2s;
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+    overflow: hidden;
+    background: rgba(30, 54, 96, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+@keyframes example1 {
+    0% {
+        transform:rotate(3deg);
+    }
+    25%{
+        /* transform: translateX(-400px); */
+    }
+    50%  {
+        transform: translateX(-400px);
+    }
+    100%{
+        transform: translateX(-400px);
+    }
+  }
+@keyframes example2 {
+    0% {
+        transform:rotate(0deg);
+        transform: translateX(-400px);
+    }
+    25%{
+        transform:rotate(3deg);
+    }
+    50%  {
+        transform:rotate(0deg);
+    }
+  }
+
+
+
+  .box_model{
+    width: 200px;
+    height: 520px;
+    background-color: rgb(51,54,103);
+    position: absolute;
+    top: 12vh;
+    left: 40vh;
+    z-index: 1;
+    border-radius: 8px;
+  }
